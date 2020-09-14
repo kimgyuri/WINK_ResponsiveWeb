@@ -2,9 +2,482 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Gyuri's Record Box</title>
+    <style>
+        /*body*/
+        body{
+            margin: 0;
+        }
+
+        /*header*/
+        header{
+            background-image: url("image/headerimg.png");
+            background-size: 1440px 210px;
+            width: 1440px;
+            height: 210px;
+        }
+        #Title{
+            width: 1440px;
+            height: 142px;
+            color: white;
+            font-size: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #Title a{
+            color: white;
+            text-decoration: none;
+            font-family: "Sunday";
+        }
+        #nav ul{
+            list-style: none;
+            color: white;
+            width: 1440px;
+            height: 68px;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        #nav ul li{
+            display: flex;
+            align-items: center;
+        }
+        #nav ul a{
+            color: white;
+            text-decoration: none;
+            font-family: "Sunshiney";
+            font-size: 20px;
+        }
+        #nav ul a:hover{
+            color: yellow;
+            text-shadow: 2px 2px 2px darkorange;
+        }
+        #center{
+            display: flex;
+            width: 1440px;
+        }
+
+        /*main*/
+        main{
+            width: 1099px;
+            height: 717px;
+        }
+        #top, #bottom{
+            height: 358.5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .one, .two, .three{
+            width: 235px;
+            height: 320px;
+            border-radius: 15px;
+        }
+
+        /*main-album*/
+        .album{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image{
+            width: 170px;
+            height: 165px;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .black_circle{
+            background-color: black;
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .white_circle{
+            background-color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 100px;
+        }
+
+        /*main-Text*/
+        .title ,.artist{
+            font-family: Abel;
+        }
+        .content{
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .genre{
+            width: 210px;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 14px;
+        }
+        .genre img{
+            width: 28px;
+            height: 26px;
+        }
+        .icon{
+            background-image: url("image/blankheart.png");
+            background-size: 28px 26px;
+            width: 28px;
+            height: 26px;
+        }
+        .icon:active{
+            background-image: url("image/heart.png");
+            background-size: 31px 31px;
+            width: 31px;
+            height: 31px;
+        }
+        .genre div{
+            text-align: end;
+        }
+        .title{
+            font-size: 30px;
+        }
+        .title:hover{
+            color: white;
+        }
+        #bottom .two .title{
+            font-size: 25px;
+        }
+        .artist{
+            font-size: 17px;
+        }
+        .image:hover{
+            -webkit-animation: rotation 4s infinite linear;
+        }
+        @-webkit-keyframes rotation {
+            from {-webkit-transform: rotate(0deg);}
+            to   {-webkit-transform: rotate(360deg);}
+        }
+        #top .one .image{
+            background-image: url("image/3am.png");
+            background-size: 170px 165px;
+        }
+        /*main-top-two*/
+        #top .two .image{
+            background-image: url("image/dynamite.png");
+            background-size: 170px 165px;
+        }
+        #top .three .image{
+            background-image: url("image/waves.png");
+            background-size: 170px 165px;
+        }
+        #bottom .one .image{
+            background-image: url("image/babyblue.png");
+            background-size: 170px 165px;
+        }
+        #bottom .two .image{
+            background-image: url("image/살짝 설렜어.png");
+            background-size: 170px 165px;
+        }
+        #bottom .three .image{
+            background-image: url("image/How we rock.png");
+            background-size: 170px 165px;
+        }
+        /*aside*/
+        aside{
+            border-left : 1px #C4C4C4 solid;
+            width: 341px;
+            height: 717px;
+            display: flex;
+            flex-direction: column;
+        }
+        #search{
+            margin-top: 30px;
+            width: 341px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #search img{
+            width: 42.26px;
+            height: 23px;
+        }
+        #search div{
+            border-bottom: 2px black dashed;
+            width: 220px;
+            height: 30px;
+        }
+        #player{
+            margin-bottom: 50px;
+            width: 341px;
+            height: 660px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #recommand{
+            height: 42.63px;
+            letter-spacing: 0.175em;
+            font-family: Sunshiney;
+            color: #117C89;
+            font-size: 35px;
+            font-weight: bolder;
+        }
+        #player .image{
+            margin-top: 20px;
+            background-image: url("image/Want you back.png");
+            background-size: 170px 165px;
+        }
+        #player_title{
+            font-family: Sunshiney;
+            font-size: 25px;
+            letter-spacing: 0.175em;
+        }
+        #player_artist{
+            font-family: Sunshiney;
+            font-size: 15px;
+            letter-spacing: 0.175em;
+        }
+        #music_player{
+            height: 50px;
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #left{
+            width: 48px;
+            height: 39px;
+            margin-bottom: 10px;
+        }
+        #right{
+            width: 48px;
+            height: 39px;
+        }
+        #left{
+            transform: rotate(180deg);
+        }
+        #mid{
+            width: 48px;
+            height: 42px;
+            margin-bottom: 5px;
+        }
+        #mid:hover, #left:hover, #right:hover{
+            width: 55px;
+            height: 50px;
+        }
+        #lyrics{
+            width: 300px;
+            height: 155px;
+            text-align: center;
+            font-family: Sunshiney;
+            font-size: 17px;
+            line-height: 41px;
+            letter-spacing: 0.055em;
+        }
+
+        /*footer*/
+        footer{
+            font-family: Sunshiney;
+            border-top : 1px #C4C4C4 solid;
+            width: 1440px;
+            height: 96px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #messanger{
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #copyright{
+            text-align: center;
+        }
+        #facebook{
+            width: 50px;
+        }
+        #instagram{
+            width: 40px;
+        }
+    </style>
 </head>
 <body>
-
+    <header>
+        <div id="Title"><a href="">GYURI'S RECORD BOX</a></div>
+        <div id="nav">
+            <nav>
+                <ul>
+                    <li><a href="">K-pop</a></li>
+                    <li><a href="">Pop</a></li>
+                    <li><a href="">OST</a></li>
+                    <li><a href="">Hiphop</a></li>
+                    <li><a href="">Indie</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="center">
+        <main>
+            <section id="top">
+                <div class="one" style="background: linear-gradient(180deg, #C4DAE3 0%, rgba(255, 255, 255, 0) 100%), #C9B1C2;">
+                    <div class="album">
+                        <div class="image">
+                            <div class="black_circle">
+                                <div class="white_circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">3am</div>
+                        <div class="artist">Halsey</div>
+                    </div>
+                    <div class="genre">
+                        <div class="icon"></div>
+                        <div>Pop<br>2020. 09. 11</div>
+                    </div>
+                </div>
+                <div class="two" style="background: linear-gradient(180deg, #FFAB88 0%, rgba(255, 255, 255, 0) 100%), #ACACAC;
+border-radius: 15px;">
+                    <div class="album">
+                        <div class="image">
+                            <div class="black_circle">
+                                <div class="white_circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Dynamite</div>
+                        <div class="artist">방탄소년단</div>
+                    </div>
+                    <div class="genre">
+                        <div class="icon"></div>
+                        <div>K-pop, Pop<br>2020. 09. 09</div>
+                    </div>
+                </div>
+                <div class="three" style="background: linear-gradient(180deg, #F4EEE9 0%, rgba(255, 255, 255, 0) 100%), #DDD0BF;
+border-radius: 15px;">
+                    <div class="album">
+                        <div class="image">
+                            <div class="black_circle">
+                                <div class="white_circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Waves</div>
+                        <div class="artist">Paige</div>
+                    </div>
+                    <div class="genre">
+                        <div class="icon"></div>
+                        <div>Pop<br>2020. 08. 29</div>
+                    </div>
+                </div>
+            </section>
+            <section id="bottom">
+                <div class="one" style="background: linear-gradient(180deg, #E8CEB4 0%, rgba(255, 255, 255, 0) 100%), #CED2BB;
+border-radius: 15px;">
+                    <div class="album">
+                        <div class="image">
+                            <div class="black_circle">
+                                <div class="white_circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">babyblue</div>
+                        <div class="artist">grass</div>
+                    </div>
+                    <div class="genre">
+                        <div class="icon"></div>
+                        <div>Indie<br>2020. 07. 13</div>
+                    </div>
+                </div>
+                <div class="two" style="background: linear-gradient(180deg, #FFD9DF 0%, rgba(255, 255, 255, 0) 100%), #C2BCE7;
+border-radius: 15px;">
+                    <div class="album">
+                        <div class="image">
+                            <div class="black_circle">
+                                <div class="white_circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">살짝 설렜어</div>
+                        <div class="artist">오마이걸</div>
+                    </div>
+                    <div class="genre">
+                        <div class="icon"></div>
+                        <div>K-pop<br>2020. 06. 06</div>
+                    </div>
+                </div>
+                <div class="three" style="background: linear-gradient(180deg, #FFA3A4 0%, rgba(255, 255, 255, 0) 100%), #B7B7B7;
+border-radius: 15px;">
+                    <div class="album">
+                        <div class="image">
+                            <div class="black_circle">
+                                <div class="white_circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">How we rock</div>
+                        <div class="artist">박재범, 식케이, 김하온, ...</div>
+                    </div>
+                    <div class="genre">
+                        <div class="icon"></div>
+                        <div>Hiphop<br>2020. 09. 11</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <div id="search">
+                <img src="image/search.png">
+                <div></div>
+            </div>
+            <div id="player">
+                <div id="recommand">Today's music</div>
+                <div class="album">
+                    <div class="image">
+                        <div class="black_circle">
+                            <div class="white_circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="player_title">Want you back</div>
+                <div id="player_artist">5 seconds of summer</div>
+                <div id="music_player">
+                    <img id="left" src="image/player.png">
+                    <img id="mid"src="image/play.png">
+                    <img id="right" src="image/player.png">
+                </div>
+                <div id="lyrics">
+                    I remember the freckles on your back<br>
+                    And the way that I used to make you laugh<br>
+                    'Cause you know every morning I wake up<br>
+                    Yeah, I still reach for you
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div id="messanger">
+            <a href="https://www.instagram.com/_tanger2ne/?hl=ko" target="_blank"><img id="instagram" src="Icon/instagram.png"></a>
+            <a href="https://www.facebook.com/Gyurll/" target="_blank"><img id="facebook" src="Icon/facebook.png"></a>
+        </div>
+        <div id="copyright">
+            &copyTangerine<br>rosa980309@naver.com
+        </div>
+    </footer>
 </body>
 </html>
