@@ -198,7 +198,7 @@
         }
         #search{
             margin-top: 30px;
-            width: 341px;
+            width: 320px;
             height: 50px;
             display: flex;
             justify-content: center;
@@ -214,7 +214,6 @@
             height: 30px;
         }
         #player{
-            margin-bottom: 50px;
             width: 341px;
             height: 660px;
             display: flex;
@@ -223,15 +222,16 @@
             flex-direction: column;
         }
         #recommand{
-            height: 42.63px;
             letter-spacing: 0.175em;
             font-family: Sunshiney;
             color: #117C89;
             font-size: 35px;
             font-weight: bolder;
+            margin-bottom: 10px;
         }
         #player .image{
-            margin-top: 20px;
+            margin-top: 30px;
+            margin-bottom: 20px;
             background-image: url("image/Want you back.png");
             background-size: 170px 165px;
         }
@@ -246,7 +246,7 @@
             letter-spacing: 0.175em;
         }
         #music_player{
-            height: 50px;
+            height: 60px;
             margin-top: 5px;
             display: flex;
             justify-content: center;
@@ -256,13 +256,11 @@
             width: 48px;
             height: 39px;
             margin-bottom: 10px;
+            transform: rotate(180deg);
         }
         #right{
             width: 48px;
             height: 39px;
-        }
-        #left{
-            transform: rotate(180deg);
         }
         #mid{
             width: 48px;
@@ -275,14 +273,22 @@
         }
         #lyrics{
             width: 300px;
-            height: 155px;
+            height: 160px;
             text-align: center;
             font-family: Sunshiney;
             font-size: 17px;
-            line-height: 41px;
+            line-height: 40px;
             letter-spacing: 0.055em;
         }
-
+        #paper{
+            position: absolute;
+            margin-top: 484px;
+            margin-right: 71px;
+            background-image: url("image/paper.png");
+            background-size: 390px 196px;
+            width: 344px;
+            height: 180px;
+        }
         /*footer*/
         footer{
             font-family: Sunshiney;
@@ -467,6 +473,7 @@ border-radius: 15px;">
                     'Cause you know every morning I wake up<br>
                     Yeah, I still reach for you
                 </div>
+                <div id="paper"></div>
             </div>
         </aside>
     </div>
