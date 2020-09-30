@@ -18,9 +18,10 @@ body{
 
 /*header*/
 header{
-    background-size: 1440px 210px;
+    background-image: url("image/subheader.jpeg");
+    background-size: 1440px 260px;
     width: 1440px;
-    height: 210px;
+    height: 260px;
 }
 #Title{
     width: 1440px;
@@ -167,36 +168,40 @@ main{
     to   {-webkit-transform: rotate(360deg);}
 }
 #top .one .image{
-    background-image: url("image/dynamite2.png");
+    background-image: url("image/TickTock.png");
     background-size: 170px 165px;
 }
 /*main-top-two*/
 #top .two .image{
-    background-image: url("image/how you like that.png");
+    background-image: url("image/3am.png");
     background-size: 170px 165px;
 }
 #top .three .image{
-    background-image: url("image/not shy.png");
+    background-image: url("image/Paycheck.png");
     background-size: 170px 165px;
 }
 #top .four .image{
-    background-image: url("image/에잇.png");
+    background-image: url("image/SorryNotSorry.png");
     background-size: 170px 165px;
 }
 #bottom .one .image{
-    background-image: url("image/신난다.png");
+    background-image: url("image/Sayso.png");
     background-size: 170px 165px;
 }
 #bottom .two .image{
-    background-image: url("image/살짝 설렜어.png");
+    background-image: url("image/Fries.png");
     background-size: 170px 165px;
 }
 #bottom .three .image{
-    background-image: url("image/덤디덤디.png");
+    background-image: url("image/do you think.png");
     background-size: 170px 165px;
 }
+
+#bottom .three .title{
+    font-size: 25px;
+}
 #bottom .four .image{
-    background-image: url("image/티키타카.png");
+    background-image: url("image/lonely.png");
     background-size: 170px 165px;
 }
 /*footer*/
