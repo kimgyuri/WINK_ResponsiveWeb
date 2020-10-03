@@ -168,32 +168,41 @@ main{
     to   {-webkit-transform: rotate(360deg);}
 }
 #top .one .image{
-    background-image: url("image/TickTock.png");
+    background-image: url("image/트웬티트웬티.png");
     background-size: 170px 165px;
 }
 /*main-top-two*/
 #top .two .image{
-    background-image: url("image/3am.png");
+    background-image: url("image/취기를빌려.png");
     background-size: 170px 165px;
 }
+#top .two .title{
+    font-size: 24px;
+}
 #top .three .image{
-    background-image: url("image/Paycheck.png");
+    background-image: url("image/go.png");
     background-size: 170px 165px;
 }
 #top .four .image{
-    background-image: url("image/SorryNotSorry.png");
+    background-image: url("image/구름.png");
     background-size: 170px 165px;
 }
+#top .four .title{
+    font-size: 24px;
+}
 #bottom .one .image{
-    background-image: url("image/Sayso.png");
+    background-image: url("image/리그오브레전드.png");
     background-size: 170px 165px;
 }
 #bottom .two .image{
-    background-image: url("image/Fries.png");
+    background-image: url("image/잘하고있어.png");
     background-size: 170px 165px;
 }
+#bottom .two .title{
+    font-size: 24px;
+}
 #bottom .three .image{
-    background-image: url("image/do you think.png");
+    background-image: url("image/beginagain.png");
     background-size: 170px 165px;
 }
 
@@ -201,9 +210,13 @@ main{
     font-size: 25px;
 }
 #bottom .four .image{
-    background-image: url("image/lonely.png");
+    background-image: url("image/좋은사람있으면.png");
     background-size: 170px 165px;
 }
+#bottom .four .title{
+    font-size: 18px;
+}
+
 /*footer*/
 footer{
     font-family: Sunshiney;
