@@ -142,14 +142,14 @@ main{
 }
 .leftside{
     width: 65px;
-    height: 30px;
+    height: 35px;
     display: flex;
     justify-content: space-between;
-    align-content: center;
 }
 .icon{
     background-image: url("image/blankheart.png");
     background-size: 28px 26px;
+    margin-top: 5px;
     width: 28px;
     height: 26px;
 }
@@ -161,15 +161,15 @@ main{
 }
 .music_stop{
     background-image: url("image/music_stop.png");
-    background-size: 29px 29px;
-    width: 29px;
-    height: 29px;
+    background-size: 35px 37px;
+    width: 35px;
+    height: 37px;
 }
 .music_stop:hover{
     background-image: url("image/music_stop.png");
-    background-size: 27px 27px;
-    width: 27px;
-    height: 27px;
+    background-size: 32px 34px;
+    width: 32px;
+    height: 34px;
 }
 .genre div{
     text-align: end;
