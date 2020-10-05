@@ -140,6 +140,7 @@ border-radius: 15px;">
             </div>
             <div id="player">
                 <div id="recommand">Today's music</div>
+                <div id="musicplay"></div>
                 <div class="album">
                     <div class="image">
                         <div class="black_circle">
@@ -150,9 +151,10 @@ border-radius: 15px;">
                 <div id="player_title">Want you back</div>
                 <div id="player_artist">5 seconds of summer</div>
                 <div id="music_player">
+                    <div id="video"></div>
                     <img id="left" src="image/player.png">
-                    <img id="mid"src="image/play.png">
-                    <img id="right" src="image/player.png">
+                    <img id="mid" src="image/play.png" onclick="playVideo()">
+                    <img id="right" src="image/player.png" onclick="stopVideo()">
                 </div>
                 <div id="lyrics">
                     I remember the freckles on your back<br>
@@ -173,5 +175,43 @@ border-radius: 15px;">
             &copyTangerine<br>rosa980309@naver.com
         </div>
     </footer>
+<script>
+    //youtube API 불러옴
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var music_player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('video', {
+            height: '360',
+            width: '640',
+            videoId: 'UaAHl_m_ybk',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.playVideo(); //자동재생
+        event.target.setVolume(50);
+    }
+
+    var done = false;
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+            done = true;
+        }
+    }
+    function playVideo(){
+        player.playVideo();
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+</script>
 </body>
 </html>
