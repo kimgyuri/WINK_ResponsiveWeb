@@ -23,55 +23,67 @@
         <main>
             <section id="top">
                 <div class="one" style="background: linear-gradient(180deg, #C4DAE3 0%, rgba(255, 255, 255, 0) 100%), #C9B1C2;">
-                    <div class="album">
+                    <div class="album" onclick="playVideo(threeam)">
                         <div class="image">
                             <div class="black_circle">
                                 <div class="white_circle"></div>
                             </div>
                         </div>
                     </div>
+                    <div id="threeam"></div>
                     <div class="content">
                         <div class="title">3am</div>
                         <div class="artist">Halsey</div>
                     </div>
                     <div class="genre">
-                        <div class="icon"></div>
+                        <div class="leftside">
+                            <div class="icon"></div>
+                            <div class="music_stop" onclick="stopVideo(threeam)"></div>
+                        </div>
                         <div>Pop<br>2020. 09. 11</div>
                     </div>
                 </div>
                 <div class="two" style="background: linear-gradient(180deg, #FFAB88 0%, rgba(255, 255, 255, 0) 100%), #ACACAC;
 border-radius: 15px;">
-                    <div class="album">
+                    <div class="album" onclick="playVideo(dynamite)">
                         <div class="image">
                             <div class="black_circle">
                                 <div class="white_circle"></div>
                             </div>
                         </div>
                     </div>
+                    <div id="dynamite"></div>
                     <div class="content">
                         <div class="title">Dynamite</div>
                         <div class="artist">방탄소년단</div>
                     </div>
                     <div class="genre">
+                        <div class="leftside">
                         <div class="icon"></div>
+                        <div class="music_stop" onclick="stopVideo(dynamite)"></div>
+                    </div>
                         <div>K-pop, Pop<br>2020. 09. 09</div>
                     </div>
                 </div>
                 <div class="three" style="background: linear-gradient(180deg, #F4EEE9 0%, rgba(255, 255, 255, 0) 100%), #DDD0BF;
 border-radius: 15px;">
-                    <div class="album">
+                    <div class="album" onclick="playVideo(waves)">
                         <div class="image">
                             <div class="black_circle">
                                 <div class="white_circle"></div>
                             </div>
                         </div>
                     </div>
+                    <div id="waves"></div>
                     <div class="content">
                         <div class="title">Waves</div>
                         <div class="artist">Paige</div>
                     </div>
                     <div class="genre">
-                        <div class="icon"></div>
+                        <div class="leftside">
+                            <div class="icon"></div>
+                            <div class="music_stop" onclick="stopVideo(waves)"></div>
+                        </div>
                         <div>Pop<br>2020. 08. 29</div>
                     </div>
                 </div>
@@ -79,55 +91,67 @@ border-radius: 15px;">
             <section id="bottom">
                 <div class="one" style="background: linear-gradient(180deg, #E8CEB4 0%, rgba(255, 255, 255, 0) 100%), #CED2BB;
 border-radius: 15px;">
-                    <div class="album">
+                    <div class="album" onclick="playVideo(babyblue)">
                         <div class="image">
                             <div class="black_circle">
                                 <div class="white_circle"></div>
                             </div>
                         </div>
                     </div>
+                    <div id="babyblue"></div>
                     <div class="content">
                         <div class="title">babyblue</div>
                         <div class="artist">grass</div>
                     </div>
                     <div class="genre">
-                        <div class="icon"></div>
+                        <div class="leftside">
+                            <div class="icon"></div>
+                            <div class="music_stop" onclick="stopVideo(babyblue)"></div>
+                        </div>
                         <div>Indie<br>2020. 07. 13</div>
                     </div>
                 </div>
                 <div class="two" style="background: linear-gradient(180deg, #FFD9DF 0%, rgba(255, 255, 255, 0) 100%), #C2BCE7;
 border-radius: 15px;">
-                    <div class="album">
+                    <div class="album" onclick="playVideo(ohmygirl)">
                         <div class="image">
                             <div class="black_circle">
                                 <div class="white_circle"></div>
                             </div>
                         </div>
                     </div>
+                    <div id="ohmygirl"></div>
                     <div class="content">
                         <div class="title">살짝 설렜어</div>
                         <div class="artist">오마이걸</div>
                     </div>
                     <div class="genre">
-                        <div class="icon"></div>
+                        <div class="leftside">
+                            <div class="icon"></div>
+                            <div class="music_stop" onclick="stopVideo(ohmygirl)"></div>
+                        </div>
                         <div>K-pop<br>2020. 06. 06</div>
                     </div>
                 </div>
                 <div class="three" style="background: linear-gradient(180deg, #FFA3A4 0%, rgba(255, 255, 255, 0) 100%), #B7B7B7;
 border-radius: 15px;">
-                    <div class="album">
+                    <div class="album" onclick="playVideo(howwerock)">
                         <div class="image">
                             <div class="black_circle">
                                 <div class="white_circle"></div>
                             </div>
                         </div>
                     </div>
+                    <div id="howwerock"></div>
                     <div class="content">
                         <div class="title">How we rock</div>
                         <div class="artist">박재범, 식케이, 김하온, ...</div>
                     </div>
                     <div class="genre">
-                        <div class="icon"></div>
+                        <div class="leftside">
+                            <div class="icon"></div>
+                            <div class="music_stop" onclick="stopVideo(howwerock)"></div>
+                        </div>
                         <div>Hiphop<br>2020. 09. 11</div>
                     </div>
                 </div>
@@ -151,10 +175,10 @@ border-radius: 15px;">
                 <div id="player_title">Want you back</div>
                 <div id="player_artist">5 seconds of summer</div>
                 <div id="music_player">
-                    <div id="video"></div>
-                    <img id="left" src="image/player.png">
-                    <img id="mid" src="image/play.png" onclick="playVideo()">
-                    <img id="right" src="image/player.png" onclick="stopVideo()">
+                    <div id="Wantyouback"></div>
+                    <img id="left" src="image/pause.jpeg" onclick="pauseVideo(wantyouback)">
+                    <img id="mid" src="image/play.jpeg" onclick="playVideo(wantyouback)">
+                    <img id="right" src="image/stop.jpeg" onclick="stopVideo(wantyouback)">
                 </div>
                 <div id="lyrics">
                     I remember the freckles on your back<br>
@@ -182,9 +206,9 @@ border-radius: 15px;">
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    var music_player;
+    var wantyouback, threeam, dynamite, waves, babyblue, ohmygirl, howwerock;
     function onYouTubeIframeAPIReady() {
-        player = new YT.Player('video', {
+        wantyouback = new YT.Player('Wantyouback', {
             height: '360',
             width: '640',
             videoId: 'UaAHl_m_ybk',
@@ -193,10 +217,63 @@ border-radius: 15px;">
                 'onStateChange': onPlayerStateChange
             }
         });
+        threeam = new YT.Player('threeam', {
+            height: '360',
+            width: '640',
+            videoId: 'dF16xX6gNUw',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        dynamite = new YT.Player('dynamite', {
+            height: '360',
+            width: '640',
+            videoId: 'KhZ5DCd7m6s',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        waves = new YT.Player('waves', {
+            height: '360',
+            width: '640',
+            videoId: 'M6Zo5oGYsec',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        babyblue = new YT.Player('babyblue', {
+            height: '360',
+            width: '640',
+            videoId: 'SsbF1pOBL9M',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        ohmygirl = new YT.Player('ohmygirl', {
+            height: '360',
+            width: '640',
+            videoId: '_Swwnu3ohpM',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        howwerock = new YT.Player('howwerock', {
+            height: '360',
+            width: '640',
+            videoId: 'E8dI58JmJj8',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
     }
 
     function onPlayerReady(event) {
-        event.target.playVideo(); //자동재생
         event.target.setVolume(50);
     }
 
@@ -206,11 +283,14 @@ border-radius: 15px;">
             done = true;
         }
     }
-    function playVideo(){
-        player.playVideo();
+    function playVideo(x){
+        x.playVideo();
     }
-    function stopVideo() {
-        player.stopVideo();
+    function stopVideo(x) {
+        x.stopVideo();
+    }
+    function pauseVideo(x) {
+        x.pauseVideo();
     }
 </script>
 </body>

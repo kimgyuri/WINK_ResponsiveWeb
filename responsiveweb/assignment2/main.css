@@ -84,6 +84,9 @@ main{
 }
 
 /*main-album*/
+#threeam, #dynamite, #waves, #babyblue, #ohmygirl, #howwerock{
+    display: none;
+}
 .album{
     height: 200px;
     display: flex;
@@ -137,6 +140,13 @@ main{
     width: 28px;
     height: 26px;
 }
+.leftside{
+    width: 65px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
 .icon{
     background-image: url("image/blankheart.png");
     background-size: 28px 26px;
@@ -148,6 +158,18 @@ main{
     background-size: 31px 31px;
     width: 31px;
     height: 31px;
+}
+.music_stop{
+    background-image: url("image/music_stop.png");
+    background-size: 29px 29px;
+    width: 29px;
+    height: 29px;
+}
+.music_stop:hover{
+    background-image: url("image/music_stop.png");
+    background-size: 27px 27px;
+    width: 27px;
+    height: 27px;
 }
 .genre div{
     text-align: end;
@@ -237,7 +259,7 @@ aside{
     font-weight: bolder;
     margin-bottom: 10px;
 }
-#video{
+#Wantyouback{
     display: none;
 }
 #player .image{
@@ -257,30 +279,28 @@ aside{
     letter-spacing: 0.175em;
 }
 #music_player{
+    width: 150px;
     height: 60px;
     margin-top: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 #left{
-    width: 48px;
-    height: 39px;
-    margin-bottom: 10px;
-    transform: rotate(180deg);
+    width: 30px;
+    height: 30px;
 }
 #right{
-    width: 48px;
-    height: 39px;
+    width: 30px;
+    height: 30px;
 }
 #mid{
-    width: 48px;
-    height: 42px;
-    margin-bottom: 5px;
+    width: 30px;
+    height: 30px;
 }
 #mid:hover, #left:hover, #right:hover{
-    width: 55px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 }
 #lyrics{
     width: 300px;
@@ -395,7 +415,7 @@ footer{
         width: 190px;
         height: 100px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         margin-left: 0px;
     }
@@ -412,7 +432,6 @@ footer{
     aside{
         display: none;
     }
-
     footer{
         width: 110%;
     }
