@@ -25,7 +25,7 @@
 <main>
     <section id="top">
         <div class="one" style="background: linear-gradient(180deg, #FFFCC1 0%, rgba(255, 255, 255, 0) 100%), #EE9ECE;">
-            <div class="album">
+            <div class="album" onclick="playVideo(twenty)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -33,16 +33,20 @@
                 </div>
             </div>
             <div class="content">
+                <div id="twenty"></div>
                 <div class="title">Twenty Twenty</div>
                 <div class="artist">펜타곤</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(twenty)"></div>
+                </div>
                 <div>Ost<br>2020. 09. 01</div>
             </div>
         </div>
         <div class="two" style="background: linear-gradient(180deg, #E1DCC9 0%, rgba(255, 255, 255, 0) 100%), #8D809D;">
-            <div class="album">
+            <div class="album" onclick="playVideo(sandle)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -50,16 +54,20 @@
                 </div>
             </div>
             <div class="content">
+                <div id="sandle"></div>
                 <div class="title">취기를 빌려</div>
                 <div class="artist">산들</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(sandle)"></div>
+                </div>
                 <div>Ost<br>2020. 09. 21</div>
             </div>
         </div>
         <div class="three" style="background: linear-gradient(180deg, #99AFC6 0%, rgba(255, 255, 255, 0) 100%), #F2F2EE;">
-            <div class="album">
+            <div class="album" onclick="playVideo(go)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -67,35 +75,43 @@
                 </div>
             </div>
             <div class="content">
+                <div id="go"></div>
                 <div class="title">Go</div>
                 <div class="artist">승관(Seventeen)</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(go)"></div>
+                </div>
                 <div>Ost<br>2020. 09. 29</div>
             </div>
         </div>
         <div class="four" style="background: linear-gradient(180deg, #F3A8A8 0%, rgba(255, 255, 255, 0) 100%), #FFEBBE;">
-            <div class="album">
+            <div class="album" onclick="playVideo(cloud)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
                     </div>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" >
+                <div id="cloud"></div>
                 <div class="title">구름</div>
                 <div class="artist">로시(Rothy)</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(cloud)"></div>
+                </div>
                 <div>Ost<br>2018. 10. 01</div>
             </div>
         </div>
     </section>
     <section id="bottom">
         <div class="one" style="background: linear-gradient(180deg, #5479B7 0%, rgba(255, 255, 255, 0) 100%), #FFFEFF;">
-            <div class="album">
+            <div class="album" onclick="playVideo(legend)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -103,16 +119,20 @@
                 </div>
             </div>
             <div class="content">
+                <div id="legend"></div>
                 <div class="title">Legends never die</div>
                 <div class="artist">against the current</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(legend)"></div>
+                </div>
                 <div>Ost<br>2017. 09. 20</div>
             </div>
         </div>
         <div class="two" style="background: linear-gradient(180deg, #ADCDCA 0%, rgba(255, 255, 255, 0) 100%), #EED99B;">
-            <div class="album">
+            <div class="album" onclick="playVideo(ykiki)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -120,16 +140,20 @@
                 </div>
             </div>
             <div class="content">
+                <div id="ykiki"></div>
                 <div class="title">잘하고 있어</div>
                 <div class="artist">최상엽</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(ykiki)"></div>
+                </div>
                 <div>Ost<br>2020. 06. 06</div>
             </div>
         </div>
         <div class="three" style="background: linear-gradient(180deg, #FFDA73 0%, rgba(255, 255, 255, 0) 100%), #87D4EA;">
-            <div class="album">
+            <div class="album" onclick="playVideo(beginagain)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -137,16 +161,20 @@
                 </div>
             </div>
             <div class="content">
+                <div id="beginagain"></div>
                 <div class="title">No one else like you</div>
                 <div class="artist">Adam Levine</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(beginagain)"></div>
+                </div>
                 <div>Ost<br>2014. 07. 01</div>
             </div>
         </div>
         <div class="four" style="background: linear-gradient(180deg, #FFDD7D 0%, rgba(255, 255, 255, 0) 100%), #F5F3F3;">
-            <div class="album">
+            <div class="album" onclick="playVideo(joy)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -154,11 +182,15 @@
                 </div>
             </div>
             <div class="content">
+                <div id="joy"></div>
                 <div class="title">좋은사람 있으면 소개시켜줘</div>
                 <div class="artist">조이(joy)</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(joy)"></div>
+                </div>
                 <div>Ost<br>2020. 08. 29</div>
             </div>
         </div>
@@ -173,5 +205,105 @@
         &copyTangerine<br>rosa980309@naver.com
     </div>
 </footer>
+<script>
+    //youtube API 불러옴
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var twenty, sandle, go, cloud, legend, ykiki, beginagain, joy;
+    function onYouTubeIframeAPIReady() {
+        twenty = new YT.Player('twenty', {
+            height: '360',
+            width: '640',
+            videoId: 'P40R_lmWfG8',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        sandle = new YT.Player('sandle', {
+            height: '360',
+            width: '640',
+            videoId: 'd2ytH5mymWY',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        go = new YT.Player('go', {
+            height: '360',
+            width: '640',
+            videoId: 'rElvdq6EaGA',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        cloud = new YT.Player('cloud', {
+            height: '360',
+            width: '640',
+            videoId: 'a9X_6IuijP0',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        legend = new YT.Player('legend', {
+            height: '360',
+            width: '640',
+            videoId: '4Q46xYqUwZQ',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        ykiki = new YT.Player('ykiki', {
+            height: '360',
+            width: '640',
+            videoId: '56gzZU-YHfI',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        beginagain = new YT.Player('beginagain', {
+            height: '360',
+            width: '640',
+            videoId: '3phVp93WZJ8',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        joy = new YT.Player('joy', {
+            height: '360',
+            width: '640',
+            videoId: '2RbweKfsm8g',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.setVolume(50);
+    }
+
+    var done = false;
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+            done = true;
+        }
+    }
+    function playVideo(x){
+        x.playVideo();
+    }
+    function pauseVideo(x) {
+        x.pauseVideo();
+    }
+</script>
 </body>
 </html>

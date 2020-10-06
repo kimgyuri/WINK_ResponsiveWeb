@@ -82,6 +82,9 @@ main{
 }
 
 /*main-album*/
+#twenty, #sandle, #go, #cloud, #legend, #ykiki, #beginagain, #joy{
+    display: none;
+}
 .album{
     height: 200px;
     display: flex;
