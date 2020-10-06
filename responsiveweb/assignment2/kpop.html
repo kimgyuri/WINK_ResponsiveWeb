@@ -174,5 +174,99 @@ border-radius: 15px;">
         &copyTangerine<br>rosa980309@naver.com
     </div>
 </footer>
+<script>
+    //youtube API 불러옴
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var wantyouback, threeam, dynamite, waves, babyblue, ohmygirl, howwerock;
+    function onYouTubeIframeAPIReady() {
+        wantyouback = new YT.Player('Wantyouback', {
+            height: '360',
+            width: '640',
+            videoId: 'UaAHl_m_ybk',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        threeam = new YT.Player('threeam', {
+            height: '360',
+            width: '640',
+            videoId: 'dF16xX6gNUw',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        dynamite = new YT.Player('dynamite', {
+            height: '360',
+            width: '640',
+            videoId: 'KhZ5DCd7m6s',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        waves = new YT.Player('waves', {
+            height: '360',
+            width: '640',
+            videoId: 'M6Zo5oGYsec',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        babyblue = new YT.Player('babyblue', {
+            height: '360',
+            width: '640',
+            videoId: 'SsbF1pOBL9M',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        ohmygirl = new YT.Player('ohmygirl', {
+            height: '360',
+            width: '640',
+            videoId: '_Swwnu3ohpM',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        howwerock = new YT.Player('howwerock', {
+            height: '360',
+            width: '640',
+            videoId: 'E8dI58JmJj8',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.setVolume(50);
+    }
+
+    var done = false;
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+            done = true;
+        }
+    }
+    function playVideo(x){
+        x.playVideo();
+    }
+    function stopVideo(x) {
+        x.stopVideo();
+    }
+    function pauseVideo(x) {
+        x.pauseVideo();
+    }
+</script>
 </body>
 </html>
