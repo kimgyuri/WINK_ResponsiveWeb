@@ -10,18 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986e6389-7ee0-4159-b087-9154a751ce39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hiphop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hiphop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Icon/sidebar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gyuri's record box.html" beforeDir="false" afterPath="$PROJECT_DIR$/gyuri's record box.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/player.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kpop.html" beforeDir="false" afterPath="$PROJECT_DIR$/kpop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ost.html" beforeDir="false" afterPath="$PROJECT_DIR$/ost.html" afterDir="false" />
-    </list>
+    <list default="true" id="986e6389-7ee0-4159-b087-9154a751ce39" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1hPy1bOe5Ft7Oxomwo5k6XKwJ4S" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -117,6 +106,7 @@
       <workItem from="1601736474818" duration="4055000" />
       <workItem from="1601824631468" duration="13372000" />
       <workItem from="1601917439183" duration="628000" />
+      <workItem from="1601960762155" duration="209000" />
     </task>
     <servers />
   </component>
