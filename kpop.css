@@ -82,6 +82,9 @@ main{
 }
 
 /*main-album*/
+#dynamite, #howyoulikethat, #notshy, #eight, #ssak, #ohmygirl, #dumdi, #tikitaka{
+    display: none;
+}
 .album{
     height: 200px;
     display: flex;
@@ -135,9 +138,16 @@ main{
     width: 28px;
     height: 26px;
 }
+.leftside{
+    width: 65px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+}
 .icon{
     background-image: url("image/blankheart.png");
     background-size: 28px 26px;
+    margin-top: 5px;
     width: 28px;
     height: 26px;
 }
@@ -146,6 +156,18 @@ main{
     background-size: 31px 31px;
     width: 31px;
     height: 31px;
+}
+.music_stop{
+    background-image: url("image/music_stop.png");
+    background-size: 35px 37px;
+    width: 35px;
+    height: 37px;
+}
+.music_stop:hover{
+    background-image: url("image/music_stop.png");
+    background-size: 32px 34px;
+    width: 32px;
+    height: 34px;
 }
 .genre div{
     text-align: end;
@@ -184,17 +206,29 @@ main{
     background-image: url("image/에잇.png");
     background-size: 170px 165px;
 }
+#top .four .title{
+    font-size: 25px;
+}
 #bottom .one .image{
     background-image: url("image/신난다.png");
     background-size: 170px 165px;
+}
+#bottom .one .title{
+    font-size: 25px;
 }
 #bottom .two .image{
     background-image: url("image/살짝 설렜어.png");
     background-size: 170px 165px;
 }
+#bottom .two .title{
+    font-size: 25px;
+}
 #bottom .three .image{
     background-image: url("image/덤디덤디.png");
     background-size: 170px 165px;
+}
+#bottom .three .title{
+    font-size: 25px;
 }
 #bottom .four .image{
     background-image: url("image/티키타카.png");
