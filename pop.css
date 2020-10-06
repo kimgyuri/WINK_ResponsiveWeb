@@ -82,6 +82,9 @@ main{
 }
 
 /*main-album*/
+#paycheck, #ticktock, #threeam, #sorrynotsorry, #sayso, #extra, #doyouthink, #fuck{
+    display: none;
+}
 .album{
     height: 200px;
     display: flex;

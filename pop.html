@@ -25,7 +25,7 @@
 <main>
     <section id="top">
         <div class="one" style="background:  linear-gradient(180deg, #E9F5EE 0%, rgba(255, 255, 255, 0) 100%), #80A780;">
-            <div class="album">
+            <div class="album" onclick="playVideo(ticktock)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -33,16 +33,20 @@
                 </div>
             </div>
             <div class="content">
+                <div id="ticktock"></div>
                 <div class="title">Tick Tock</div>
                 <div class="artist">Clean Bandit, Mabel</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(ticktock)"></div>
+                </div>
                 <div>Pop<br>2020. 09. 11</div>
             </div>
         </div>
         <div class="two" style="background: linear-gradient(180deg, #C4DAE3 0%, rgba(255, 255, 255, 0) 100%), #C9B1C2;">
-            <div class="album">
+            <div class="album" onclick="playVideo(threeam)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -50,16 +54,20 @@
                 </div>
             </div>
             <div class="content">
+                <div id="threeam"></div>
                 <div class="title">3am</div>
                 <div class="artist">Halsey</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(threeam)"></div>
+                </div>
                 <div>Pop<br>2020. 09. 09</div>
             </div>
         </div>
         <div class="three" style="background: linear-gradient(180deg, #F1CEA1 0%, rgba(255, 255, 255, 0) 100%), #C7C9DB;">
-            <div class="album">
+            <div class="album" onclick="playVideo(paycheck)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -67,16 +75,20 @@
                 </div>
             </div>
             <div class="content">
+                <div id="paycheck"></div>
                 <div class="title">Paycheck</div>
                 <div class="artist">ROOKIES, New Hope Club</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(paycheck)"></div>
+                </div>
                 <div>Pop<br>2020. 08. 29</div>
             </div>
         </div>
         <div class="four" style="background: linear-gradient(180deg, #ECECEC 0%, rgba(255, 255, 255, 0) 100%), #888888;">
-            <div class="album">
+            <div class="album" onclick="playVideo(sorrynotsorry)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -84,18 +96,22 @@
                 </div>
             </div>
             <div class="content">
+                <div id="sorrynotsorry"></div>
                 <div class="title">Sorry Not Sorry</div>
                 <div class="artist">Demo Lovato</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(sorrynotsorry)"></div>
+                </div>
                 <div>Pop<br>2020. 08. 29</div>
             </div>
         </div>
     </section>
     <section id="bottom">
         <div class="one" style="background: linear-gradient(180deg, #FBF3F8 0%, rgba(255, 255, 255, 0) 100%), #ED98C4;">
-            <div class="album">
+            <div class="album" onclick="playVideo(sayso)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -103,16 +119,20 @@
                 </div>
             </div>
             <div class="content">
+                <div id="sayso"></div>
                 <div class="title">Say So</div>
                 <div class="artist">Doja Cat</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(sayso)"></div>
+                </div>
                 <div>Pop<br>2020. 07. 13</div>
             </div>
         </div>
         <div class="two" style="background: linear-gradient(180deg, #FBD99F 0%, rgba(255, 255, 255, 0) 100%), #DA7476;">
-            <div class="album">
+            <div class="album" onclick="playVideo(extra)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -120,16 +140,20 @@
                 </div>
             </div>
             <div class="content">
+                <div id="extra"></div>
                 <div class="title">EXTRA FR!ES</div>
                 <div class="artist">ILIRA</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(extra)"></div>
+                </div>
                 <div>Pop<br>2020. 06. 06</div>
             </div>
         </div>
         <div class="three" style="background: linear-gradient(180deg, #A3CFC3 0%, rgba(255, 255, 255, 0) 100%), #FFD3D3;">
-            <div class="album">
+            <div class="album" onclick="playVideo(doyouthink)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -137,16 +161,20 @@
                 </div>
             </div>
             <div class="content">
+                <div id="doyouthink"></div>
                 <div class="title">Do you think about me</div>
                 <div class="artist">Benjamin Ingrosso</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(doyouthink)"></div>
+                </div>
                 <div>Pop<br>2020. 09. 11</div>
             </div>
         </div>
         <div class="four" style="background: linear-gradient(180deg, #CBBFB5 0%, rgba(255, 255, 255, 0) 100%), #DEAA94;">
-            <div class="album">
+            <div class="album" onclick="playVideo(fuck)">
                 <div class="image">
                     <div class="black_circle">
                         <div class="white_circle"></div>
@@ -154,11 +182,15 @@
                 </div>
             </div>
             <div class="content">
+                <div id="fuck"></div>
                 <div class="title">fuck, i'm lonely</div>
                 <div class="artist">Lauv</div>
             </div>
             <div class="genre">
-                <div class="icon"></div>
+                <div class="leftside">
+                    <div class="icon"></div>
+                    <div class="music_stop" onclick="pauseVideo(fuck)"></div>
+                </div>
                 <div>Pop<br>2020. 08. 29</div>
             </div>
         </div>
@@ -173,5 +205,105 @@
         &copyTangerine<br>rosa980309@naver.com
     </div>
 </footer>
+<script>
+    //youtube API 불러옴
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var ticktock, threeam, paycheck, sorrynotsorry, sayso, extra, doyouthink, fuck;
+    function onYouTubeIframeAPIReady() {
+        ticktock = new YT.Player('ticktock', {
+            height: '360',
+            width: '640',
+            videoId: 'yC8SPG2LwSA',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        threeam = new YT.Player('threeam', {
+            height: '360',
+            width: '640',
+            videoId: 'dF16xX6gNUw',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        paycheck = new YT.Player('paycheck', {
+            height: '360',
+            width: '640',
+            videoId: 'hlZ-Q_KW3Y0',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        sorrynotsorry = new YT.Player('sorrynotsorry', {
+            height: '360',
+            width: '640',
+            videoId: 'q2NAU8XjqG4',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        sayso = new YT.Player('sayso', {
+            height: '360',
+            width: '640',
+            videoId: 'uAYG46w1SCA',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        extra = new YT.Player('extra', {
+            height: '360',
+            width: '640',
+            videoId: 'XWIp4_AHSM0',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        doyouthink = new YT.Player('doyouthink', {
+            height: '360',
+            width: '640',
+            videoId: 'FVtM8KccamE',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        fuck = new YT.Player('fuck', {
+            height: '360',
+            width: '640',
+            videoId: 'AIp3IOhBYiU',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.setVolume(50);
+    }
+
+    var done = false;
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+            done = true;
+        }
+    }
+    function playVideo(x){
+        x.playVideo();
+    }
+    function pauseVideo(x) {
+        x.pauseVideo();
+    }
+</script>
 </body>
 </html>
